@@ -21,6 +21,8 @@
   --color-cyan: hsl(180, 62%, 55%);
   --color-orange: hsl(34, 97%, 64%);
   --color-blue: hsl(212, 86%, 64%);
+
+  --gap: 2rem;
 }
 
 *,
@@ -43,15 +45,20 @@ html {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   font-weight: var(--fw-normal);
-  line-height: 1.7;
   color: var(--color-neutral-400);
+}
+
+body {
+  background-color: var(--color-neutral-100);
+  padding-bottom: 6rem;
+  line-height: 1.8;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.2;
   color: var(--color-neutral-900);
+  line-height: 1.2;
 }
 
 .wrapper {
@@ -61,4 +68,72 @@ h3 {
 
 .wrapper--narrow {
   max-width: 550px;
+}
+
+header {
+  text-align: center;
+  margin-block: 6rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-light);
+}
+
+h1 span {
+  font-weight: var(--fw-bold);
+}
+header > p {
+  font-size: var(--fs-500);
+}
+
+/* main layout */
+.layout-grid {
+  display: flex;
+  gap: var(--gap);
+}
+
+.layout-grid > * {
+  flex: 1;
+}
+
+.col {
+  display: grid;
+  align-content: center;
+  gap: var(--gap);
+}
+
+.card {
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem -0.5rem rgb(0 50 100 / 0.15);
+  border-radius: 0.5rem;
+  border-top: 0.5rem solid;
+}
+
+.border-cyan {
+  border-color: var(--color-cyan);
+}
+
+.border-red {
+  border-color: var(--color-red);
+}
+.border-orange {
+  border-color: var(--color-orange);
+}
+.border-blue {
+  border-color: var(--color-blue);
+}
+
+.card h2 {
+  font-size: var(--fs-600);
+  margin-bottom: 0.7rem;
+}
+
+.card img {
+  margin-left: auto;
+  margin-top: 1.85rem;
 }
