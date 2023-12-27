@@ -1,0 +1,64 @@
+:root {
+  /* FONTS */
+  --ff-sans: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  /* small, regular, large */
+  --fs-400: 0.9375rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-900: 2.5rem;
+
+  /* COLORS */
+  --color-neutral-900: hsl(234, 12%, 24%);
+  --color-neutral-400: hsl(229, 6%, 66%);
+  --color-neutral-100: hsl(0, 0%, 98%);
+
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-normal);
+  line-height: 1.7;
+  color: var(--color-neutral-400);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--color-neutral-900);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.wrapper--narrow {
+  max-width: 550px;
+}
