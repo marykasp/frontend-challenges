@@ -1,0 +1,214 @@
+/*
+* Custom properties..........Global variables
+* Reset......................Remove browser default styles
+* Typography.................Font sizes for text
+*/
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+  --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
+  --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
+  --maximum-yellow-red: hsl(41, 99%, 64%);
+  --orange-red_a20: hsla(19, 100%, 55%, 0.2);
+  --eerie-black: hsl(210, 11%, 15%);
+  --orange-red: hsl(19, 100%, 55%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --white_a80: hsla(0, 0%, 100%, 0.8);
+  --white_a75: hsla(0, 0%, 100%, 0.75);
+  --white_a10: hsla(0, 0%, 100%, 0.1);
+  --jet_a10: hsla(0, 0%, 22%, 0.1);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --jet: hsl(0, 0%, 22%);
+
+  /* Typography */
+  --ff-jost: "Jost", sans-serif;
+
+  --fs-45: 4.5rem;
+  --fs-38: 3.8rem;
+  --fs-32: 3.2rem;
+  --fs-27: 2.7rem;
+  --fs-26: 2.6rem;
+  --fs-22: 2.2rem;
+  --fs-20: 2rem;
+  --fs-18: 1.8rem;
+  --fs-17: 1.7rem;
+  --fs-14: 1.4rem;
+  --fs-12: 1.2rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  --section-padding: 60px;
+
+  --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
+
+  --radius-50: 50px;
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+label,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: var(--ff-jost);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--davys-gray);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+body.loaded {
+  overflow: visible;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+
+.headline-lg {
+  font-size: var(--fs-45);
+}
+
+.headline-md {
+  font-size: var(--fs-38);
+}
+
+.headline-sm {
+  font-size: var(--fs-32);
+}
+
+.title-lg {
+  font-size: var(--fs-27);
+}
+
+.title-md {
+  font-size: var(--fs-26);
+}
+
+.title-sm {
+  font-size: var(--fs-22);
+}
+
+.body-lg {
+  font-size: var(--fs-20);
+}
+
+.body-md {
+  font-size: var(--fs-18);
+}
+
+.body-sm {
+  font-size: var(--fs-17);
+}
+
+.label-lg {
+  font-size: var(--fs-14);
+}
+
+.label-md {
+  font-size: var(--fs-12);
+}
+
+.headline-lg,
+.headline-md,
+.headline-sm,
+.title-lg,
+.title-md,
+.title-sm,
+.label-lg {
+  color: var(--jet);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+}
+
+.body-lg {
+  font-weight: var(--fw-500);
+}
