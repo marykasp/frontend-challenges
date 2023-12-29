@@ -1,4 +1,6 @@
 @import url("./components/btn.css");
+@import url("./components/card.css");
+@import url("./components/slider.css");
 
 /* Preloader */
 .preloader {
@@ -194,11 +196,11 @@
 }
 
 /*-----------------------------------*\
-  #HERO SECTION
+  #ABOUT SECTION
 \*-----------------------------------*/
 .about .wrapper {
   display: grid;
-  gap: 50px;
+  gap: 30px;
 }
 
 .about .section-text {
@@ -227,4 +229,35 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 15px;
+}
+
+/*-----------------------------------*\
+  #SKILLS SECTION
+\*-----------------------------------*/
+.skills {
+  padding-block-end: 0;
+}
+
+.skills .wrapper,
+.skill-list {
+  display: grid;
+}
+
+.skills .wrapper {
+  gap: 50px;
+}
+
+.skill-list {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skills .card ion-icon {
+  font-size: 3rem;
+}
+
+.skills .card-title {
+  color: var(--jet);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-600);
 }

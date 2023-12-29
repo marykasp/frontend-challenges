@@ -93,20 +93,23 @@
       <!-- ABOUT SECTION -->
       <section class="section about" aria-label="about-me">
         <div class="wrapper">
-          <figure class="about-banner">
-            <img
-              src="./assets/images/about-banner.png"
-              alt=""
-              width="580"
-              height="554"
-              loading="lazy"
-              class="w-100"
-            />
-          </figure>
-          <div class="about-content">
+          <div>
             <h2 class="title-lg">
               I'm a Front-end Developer with over 3 years of coding projects.
             </h2>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                alt=""
+                width="580"
+                height="554"
+                loading="lazy"
+                class="w-100"
+              />
+            </figure>
+          </div>
+          <div class="about-content">
             <p class="body-md section-text">
               I'm a passionate front-end developer based in Chicago specializing
               in the art of crafting visually stunning websites. My expertise
@@ -144,7 +147,57 @@
         </div>
       </section>
       <!-- SKILLS SECTION -->
-      <section class="section skills"></section>
+      <section class="section skills" aria-label="skill-label">
+        <div class="wrapper">
+          <div class="skill-content">
+            <h2 class="section-title headline-md" id="skill-label">
+              My Skills
+            </h2>
+            <ul class="skill-list">
+              <li>
+                <div class="card card-sm" style="background-color: #ff8c8e">
+                  <div class="card-media">
+                    <ion-icon name="logo-react"></ion-icon>
+                  </div>
+                  <h2 class="card-title">React</h2>
+                </div>
+              </li>
+              <li>
+                <div class="card card-sm" style="background-color: #faba00">
+                  <div class="card-media">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                  </div>
+                  <h2 class="card-title">Javascript</h2>
+                </div>
+              </li>
+              <li>
+                <div class="card card-sm" style="background-color: #a7b55b">
+                  <div class="card-media">
+                    <ion-icon name="logo-css3"></ion-icon>
+                  </div>
+                  <h2 class="card-title">CSS</h2>
+                </div>
+              </li>
+              <li>
+                <div class="card card-sm" style="background-color: #bfa5a4">
+                  <div class="card-media">
+                    <ion-icon name="logo-html5"></ion-icon>
+                  </div>
+                  <h2 class="card-title">HTML</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <figure class="skill-banner">
+            <img
+              src="./assets/images/skills-banner.png"
+              loading="lazy"
+              alt=""
+              class="w-100"
+            />
+          </figure>
+        </div>
+      </section>
     </main>
 
     <script src="./assets/js/script.js"></script>
