@@ -2,6 +2,7 @@
 * Custom properties..........Global variables
 * Reset......................Remove browser default styles
 * Typography.................Font sizes for text
+* Reused Styles.................Repeated styles throughout website
 */
 
 /*-----------------------------------*\
@@ -13,8 +14,11 @@
   --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
   --maximum-yellow-red: hsl(41, 99%, 64%);
   --orange-red_a20: hsla(19, 100%, 55%, 0.2);
-  --eerie-black: hsl(210, 11%, 15%);
   --orange-red: hsl(19, 100%, 55%);
+  --olive-green: hsl(54, 22%, 34%);
+  --olive-green_a30: hsl(54, 22%, 34%, 0.3);
+  --eerie-black: hsl(210, 11%, 15%);
+  --pink-accent: #ff8c8e;
   --davys-gray: hsl(0, 0%, 33%);
   --white_a80: hsla(0, 0%, 100%, 0.8);
   --white_a75: hsla(0, 0%, 100%, 0.75);
@@ -127,7 +131,7 @@ body {
   color: var(--davys-gray);
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body.loaded {
@@ -219,7 +223,12 @@ body.loaded {
   font-weight: var(--fw-500);
 }
 
-/* Reused Styles */
+/*-----------------------------------*\
+  #REUSED STYLES
+\*-----------------------------------*/
+.w-100 {
+  width: 100%;
+}
 
 .wrapper {
   padding-inline: 16px;

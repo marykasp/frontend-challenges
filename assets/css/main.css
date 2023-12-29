@@ -1,3 +1,5 @@
+@import url("./components/btn.css");
+
 /* Preloader */
 .preloader {
   position: fixed;
@@ -68,6 +70,17 @@
   font-size: 3.8rem;
 }
 
+.logo {
+  font-size: var(--fs-20);
+  color: var(--pink-accent);
+  font-weight: var(--fw-600);
+}
+
+.logo span {
+  display: inline;
+  color: var(--jet);
+}
+
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -114,5 +127,69 @@
 }
 
 .navbar-link:is(:hover, :focus-visible, .active) {
-  color: var(--orange-red);
+  color: var(--pink-accent);
+}
+
+/*-----------------------------------*\
+  #HERO SECTION
+\*-----------------------------------*/
+
+.hero {
+  position: relative;
+  background-color: var(--maximum-yellow-red_a10);
+  padding-block-start: calc(var(--section-padding) + 60px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  bottom: 60%;
+  right: -75%;
+  background-color: var(--maximum-yellow-red_a40);
+  transform: rotate(-35deg);
+  border-radius: 60px;
+  z-index: -1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25%;
+  bottom: 66%;
+  right: 45%;
+  transform: rotate(-30deg);
+  z-index: -10;
+  background-color: var(--olive-green_a30);
+  border-radius: 60px;
+}
+
+.hero .wrapper {
+  display: grid;
+  gap: 70px;
+}
+
+.hero-subtitle {
+  color: var(--jet);
+  text-transform: uppercase;
+  font-weight: var(--fw-600);
+  letter-spacing: 2px;
+  margin-block-end: 20px;
+}
+
+.hero-text {
+  margin-block: 25px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero-banner {
+  max-width: max-content;
+  margin-inline: auto;
 }

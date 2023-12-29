@@ -1,0 +1,40 @@
+/*-----------------------------------*\
+  #BUTTON COMPONENTS 
+\*-----------------------------------*/
+
+.btn {
+  background-color: var(--pink-accent);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+  transition: var(--transition-1);
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--jet));
+  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(--pink-accent));
+}
+
+.btn-primary,
+.btn-secondary {
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--jet);
+  --shadow-color: var(--pink-accent);
+  --hover-bg: var(--pink-accent);
+  --hover-shadow-color: var(--jet);
+}
+
+.btn-tertiary {
+  color: var(--white);
+  background-color: var(--olive-green);
+  --shadow-color: var(--jet);
+  --hover-bg: var(--jet);
+  --hover-shadow-color: var(--olive-green_a30);
+}
