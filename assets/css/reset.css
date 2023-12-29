@@ -236,6 +236,7 @@ body.loaded {
 
 .section {
   padding-block: var(--section-padding);
+  background-color: var(--maximum-yellow-red_a10);
 }
 
 .section-title {
