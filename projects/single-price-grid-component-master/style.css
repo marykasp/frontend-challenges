@@ -48,13 +48,15 @@ body {
 
 .grid-flow {
   display: grid;
+  align-content: start;
+  gap: 1rem;
 }
 
-.flex-group {
+/* .flex-group {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-}
+} */
 
 /* top card */
 .top .title {
