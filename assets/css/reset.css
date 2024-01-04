@@ -94,6 +94,8 @@ a {
 }
 
 img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -249,6 +251,10 @@ body.loaded {
 
 .text-center {
   text-align: center;
+}
+
+.img-block {
+  aspect-ratio: var(--width) / var(--height);
 }
 
 /* Preloader */
