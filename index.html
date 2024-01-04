@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <!-- Images -->
-    <link rel="preload" href="./assets/images/hero-banner.png" />
+    <link rel="preload" href="./assets/images/hero-banner.png" as="image" />
   </head>
   <body>
     <!-- PRELOADER -->
@@ -74,7 +74,7 @@
       <section class="section hero has-before">
         <div class="wrapper">
           <div class="hero-content">
-            <p class="hero-subtitle">Hii, My name is Mary</p>
+            <p class="hero-subtitle"><span>Hii</span>, My name is Mary</p>
             <h1 class="headline-lg">I'm a Web Developer</h1>
             <p class="hero-text body-md">Based in Chicago, Illinois.</p>
             <a href="#" class="btn btn-secondary">View Work</a>
@@ -201,11 +201,37 @@
       <!-- CALL TO ACTION -->
       <section class="section cta" id="cta">
         <div class="wrapper">
-          <h2 class="title-lg">Want to connect?</h2>
-          <a href="./contact.html" class="btn btn-tertiary">Contact Me</a>
+          <h2 class="title-lg">👋🏻 Want to connect?</h2>
+          <a href="./contact.html" class="btn btn-primary">Contact Me</a>
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrapper">
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">
+          ☕ Buy me a
+          <a href="https://ko-fi.com/marykasp" target="_blank">coffee</a>
+        </p>
+      </div>
+    </footer>
 
     <script src="./assets/js/script.js"></script>
 
