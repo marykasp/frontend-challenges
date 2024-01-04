@@ -245,6 +245,7 @@
 
 .skills .wrapper {
   gap: 50px;
+  position: relative;
 }
 
 .skill-list {
@@ -260,4 +261,23 @@
   color: var(--jet);
   font-size: var(--fs-16);
   font-weight: var(--fw-600);
+}
+
+.cta {
+  text-align: center;
+  background-color: var(--olive-green_a30);
+}
+
+.cta .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta .title-lg {
+  color: var(--jet);
+  font-weight: var(--fw-500);
 }
