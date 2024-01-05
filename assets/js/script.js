@@ -1,12 +1,10 @@
-const preloader = document.querySelector("[data-preloader]");
-window.addEventListener("load", () => {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
-});
-
 const addEventOnElements = (elements, eventType, callback) => {
   elements.forEach((element) => element.addEventListener(eventType, callback));
 };
+
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
 
 /*-----------------------------------*\
   #MOBILE NAVIGATION
