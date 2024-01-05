@@ -46,3 +46,26 @@ window.addEventListener("scroll", activeHeader);
 /*-----------------------------------*\
   #PROJECT TABS
 \*-----------------------------------*/
+const tabs = document.querySelectorAll(".tab-btn");
+const all_content = Array.from(document.querySelectorAll(".project-card"));
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", (e) => {
+    // iterate over all tabs and remove active class
+    tabs.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+
+    let line = document.querySelector(".line");
+    line.style.width = e.target.offsetWidth + "px";
+    line.style.left = e.target.offsetLeft + "px";
+
+    // show content that matches the data-id of tab btn
+    let id = tab.getAttribute(["data-id"]);
+    all_content.forEach((content) => {
+      content.classList.remove("active");
+      if (content.getAttribute(["data-type"]) === id) {
+        content.classList.add("active");
+      }
+    });
+  });
+});

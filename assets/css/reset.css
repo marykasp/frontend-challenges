@@ -135,6 +135,9 @@ body {
   color: var(--davys-gray);
   font-size: 1.6rem; /* 16px */
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   /* overflow: hidden; */
 }
 

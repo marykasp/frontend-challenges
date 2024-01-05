@@ -23,11 +23,12 @@
   align-items: center;
   border-bottom: 2px solid var(--jet_a10);
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .tab-box .tab-btn {
   font-size: var(--fs-18);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-400);
   color: var(--eerie-black);
   background: none;
   border: none;
@@ -35,6 +36,33 @@
   cursor: pointer;
 }
 
+.tab-btn.active {
+  color: var(--pink-accent);
+  font-weight: var(--fw-600);
+}
+
+.line {
+  position: absolute;
+  top: 41px;
+  left: 17px;
+  width: 80px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--pink-accent);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 575px) {
+  .line {
+    left: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .line {
+    left: 78px;
+  }
+}
 /*-----------------------------------*\
   #TAB CONTENT
 \*-----------------------------------*/
@@ -46,6 +74,22 @@
 .project-card {
   gap: 20px;
   display: none;
+  animation: moving 0.5s ease;
+}
+
+@keyframes moving {
+  from {
+    tranform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.project-card.active {
+  display: block;
 }
 
 .project-card .card-banner {
@@ -79,6 +123,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-block: 2rem;
 }
 
 .project-card .chip {
@@ -90,7 +135,6 @@
   letter-spacing: 3px;
   padding: 6px 20px;
   border-radius: var(--radius-pill);
-  margin-block-end: 18px;
 }
 
 .chip[data-chip="css"] {

@@ -77,12 +77,13 @@
           </h2>
           <!-- tab list -->
           <div class="tab-box">
-            <button class="tab-btn">Newbie</button>
-            <button class="tab-btn">Junior</button>
-            <button class="tab-btn">Intermediate</button>
+            <button class="tab-btn active" data-id="newbie">Newbie</button>
+            <button class="tab-btn" data-id="junior">Junior</button>
+            <button class="tab-btn" data-id="intermediate">Intermediate</button>
+            <div class="line"></div>
           </div>
           <div class="project-list grid-flow content-box">
-            <div class="project-card grid-flow">
+            <div class="project-card grid-flow active" data-type="newbie">
               <div
                 class="card-banner img-block"
                 style="--width: 800; --height: 540"
@@ -123,7 +124,7 @@
                 >
               </div>
             </div>
-            <div class="project-card grid-flow">
+            <div class="project-card grid-flow active" data-type="newbie">
               <div
                 class="card-banner img-block"
                 style="--width: 800; --height: 540"
@@ -160,7 +161,7 @@
                 <a href="#" class="btn btn-secondary">View Code</a>
               </div>
             </div>
-            <div class="project-card grid-flow">
+            <div class="project-card grid-flow" data-type="junior">
               <div
                 class="card-banner img-block"
                 style="--width: 800; --height: 540"
@@ -196,7 +197,7 @@
                 <a href="#" class="btn btn-secondary">View Code</a>
               </div>
             </div>
-            <div class="project-card grid-flow">
+            <div class="project-card grid-flow" data-type="junior">
               <div
                 class="card-banner img-block"
                 style="--width: 800; --height: 540"
