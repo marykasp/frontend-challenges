@@ -1,6 +1,11 @@
 /* Components */
 @import url("../components/btn.css");
 @import url("../components/card.css");
+@import url("../components/monster.css");
+
+article {
+  width: 100%;
+}
 
 .project {
   background-color: var(--maximum-yellow-red_a10);

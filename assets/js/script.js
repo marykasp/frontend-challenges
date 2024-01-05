@@ -54,7 +54,7 @@ window.addEventListener("scroll", activeHeader);
 \*-----------------------------------*/
 const tabs = document.querySelectorAll(".tab-btn");
 const all_content = Array.from(document.querySelectorAll(".project-card"));
-const monster = document.querySelector("#monster");
+const monster = document.querySelector(".monster-container");
 
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", (e) => {
