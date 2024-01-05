@@ -29,10 +29,10 @@
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -20%;
   left: -25%;
-  bottom: 66%;
-  right: 45%;
+  bottom: 50%;
+  right: 25%;
   transform: rotate(-30deg);
   z-index: -10;
   background-color: var(--olive-green_a30);
@@ -206,6 +206,92 @@
   }
 }
 
-/* larger than 768px */
 @media (min-width: 768px) {
+  /* Hero */
+  .hero-text {
+    --fs-18: 2rem;
+  }
+
+  .hero::after {
+    top: -20%;
+    left: 48%;
+  }
+
+  .hero::before {
+    top: -20%;
+    left: -40%;
+    bottom: 56%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding-inline: 50px;
+  }
+  /* GRID WRAPPER */
+  :is(.hero, .about, .skills) .wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  :is(.about-banner, .skill-banner) {
+    margin-inline: 0;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero-content {
+    grid-column-end: span 1;
+  }
+
+  .hero::after {
+    top: -60%;
+  }
+
+  .hero::before {
+    left: -30%;
+  }
+
+  .hero .btn {
+    margin-inline: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* GRID WRAPPER */
+  :is(.hero, .about, .skills) .wrapper {
+    gap: 50px;
+  }
+
+  .about-list {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1300px;
+  }
+
+  .hero::before {
+    left: -70%;
+  }
+
+  .hero::after {
+    top: -90%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero::after {
+    top: -100%;
+    left: 70%;
+  }
+
+  .hero::before {
+    right: 0%;
+  }
 }

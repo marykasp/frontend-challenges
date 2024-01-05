@@ -28,7 +28,7 @@
 
 .tab-box .tab-btn {
   font-size: var(--fs-18);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-500);
   color: var(--eerie-black);
   background: none;
   border: none;
@@ -63,6 +63,41 @@
     left: 78px;
   }
 }
+
+@media (min-width: 992px) {
+  .line {
+    left: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .line {
+    left: 142px;
+  }
+
+  .tab-box {
+    margin-block-end: 5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .line {
+    left: 172px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .line {
+    left: 200px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .line {
+    left: 250px;
+  }
+}
+
 /*-----------------------------------*\
   #TAB CONTENT
 \*-----------------------------------*/
@@ -89,7 +124,7 @@
 }
 
 .project-card.active {
-  display: block;
+  display: grid;
 }
 
 .project-card .card-banner {
@@ -147,4 +182,54 @@
 
 .project-card .card-text {
   margin-block: 10px 25px;
+}
+
+/*-----------------------------------*\
+  #ERROR MONSTER
+\*-----------------------------------*/
+
+#monster {
+  visibility: hidden;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--pink-accent);
+}
+
+#monster.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media (min-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .project-list > div:nth-child(2n) .card-banner {
+    order: 1;
+  }
+
+  .project-card > * {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .project-card .card-content {
+    padding-inline: 0px;
+  }
+
+  .project-card .card-text {
+    margin-block-start: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .project {
+    padding-inline: 50px;
+  }
 }

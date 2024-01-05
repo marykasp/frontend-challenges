@@ -60,3 +60,17 @@
   place-items: center;
   flex-shrink: 0;
 }
+
+@media (min-width: 768px) {
+  .card-lg {
+    padding: 35px;
+  }
+
+  .card-md {
+    padding: 40px;
+  }
+
+  .card-sm {
+    padding: 15px;
+  }
+}

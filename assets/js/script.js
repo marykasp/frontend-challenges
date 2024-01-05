@@ -1,9 +1,8 @@
-// Preloader
-// const preloader = document.querySelector("[data-prelaoder]");
-// window.addEventListener("load", () => {
-//   preloader.classList.add("loaded");
-//   document.body.classList.add("loaded");
-// });
+const preloader = document.querySelector("[data-preloader]");
+window.addEventListener("load", () => {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
 
 const addEventOnElements = (elements, eventType, callback) => {
   elements.forEach((element) => element.addEventListener(eventType, callback));
@@ -48,6 +47,7 @@ window.addEventListener("scroll", activeHeader);
 \*-----------------------------------*/
 const tabs = document.querySelectorAll(".tab-btn");
 const all_content = Array.from(document.querySelectorAll(".project-card"));
+const monster = document.querySelector("#monster");
 
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", (e) => {
@@ -59,11 +59,18 @@ tabs.forEach((tab, index) => {
     line.style.width = e.target.offsetWidth + "px";
     line.style.left = e.target.offsetLeft + "px";
 
+    monster.classList.remove("show");
     // show content that matches the data-id of tab btn
     let id = tab.getAttribute(["data-id"]);
+    if (id === "intermediate") {
+      monster.classList.add("show");
+    }
+
+    // iterate over all the content and check if data-type equals btn id
     all_content.forEach((content) => {
       content.classList.remove("active");
       if (content.getAttribute(["data-type"]) === id) {
+        console.log(`Matches ${id}`);
         content.classList.add("active");
       }
     });
