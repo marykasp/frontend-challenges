@@ -136,6 +136,11 @@
   padding-inline: 10px;
 }
 
+.project-card .card-content .frontend-link {
+  color: #a7b55b;
+  font-weight: var(--fw-600);
+}
+
 .project-card .btn-icon {
   position: absolute;
   top: 15px;
@@ -182,23 +187,6 @@
 
 .project-card .card-text {
   margin-block: 10px 25px;
-}
-
-/*-----------------------------------*\
-  #ERROR MONSTER
-\*-----------------------------------*/
-
-#monster {
-  visibility: hidden;
-  opacity: 0;
-  width: 20px;
-  height: 20px;
-  background-color: var(--pink-accent);
-}
-
-#monster.show {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*-----------------------------------*\
