@@ -6,29 +6,29 @@
 // });
 
 const addEventOnElements = (elements, eventType, callback) => {
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].addEventListener(eventType, callback);
-  }
+  elements.forEach((element) => element.addEventListener(eventType, callback));
 };
 
-// Mobile Navigation
+/*-----------------------------------*\
+  #MOBILE NAVIGATION
+\*-----------------------------------*/
+
+// navbar and navtoggle elements
 const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
-
 const navToggler = document.querySelector("[data-nav-toggler]");
-// console.log(navToggler);
 
 const toggleNavbar = function () {
-  console.log(navbar);
   navbar.classList.toggle("active");
 };
-
-navToggler.addEventListener("click", toggleNavbar);
-
 const closeNavbar = function () {
   navbar.classList.remove("active");
 };
 
+// event listener on navtoggle menu
+navToggler.addEventListener("click", toggleNavbar);
+
+// iterate over each link and add an event listener
 addEventOnElements(navbarLinks, "click", closeNavbar);
 
 // HEADER - active when scrolled to top
@@ -42,3 +42,7 @@ const activeHeader = () => {
 };
 
 window.addEventListener("scroll", activeHeader);
+
+/*-----------------------------------*\
+  #PROJECT TABS
+\*-----------------------------------*/

@@ -69,160 +69,170 @@
     </header>
 
     <main>
-      <!-- tab menu: newbie, intermediate, advanced -->
       <article>
         <!-- Projects -->
         <section class="section project" aria-labelledby="project-label">
           <h2 class="section-title headline-md text-center">
             Frontend Challenge Projects
           </h2>
-          <ul class="project-list grid-flow">
-            <li>
-              <div class="project-card grid-flow">
-                <div
-                  class="card-banner img-block"
-                  style="--width: 800; --height: 540"
+          <!-- tab list -->
+          <div class="tab-box">
+            <button class="tab-btn">Newbie</button>
+            <button class="tab-btn">Junior</button>
+            <button class="tab-btn">Intermediate</button>
+          </div>
+          <div class="project-list grid-flow content-box">
+            <div class="project-card grid-flow">
+              <div
+                class="card-banner img-block"
+                style="--width: 800; --height: 540"
+              >
+                <img
+                  src="./assets/images/project-1.png"
+                  alt="project-1"
+                  width="800"
+                  height="540"
+                />
+                <a
+                  href="./projects/qr-code-component-main/index.html"
+                  class="btn-icon"
+                  aria-label="QR Code Challenge"
                 >
-                  <img
-                    src="./assets/images/project-1.png"
-                    alt="project-1"
-                    width="800"
-                    height="540"
-                  />
-                  <a
-                    href="./projects/qr-code-component-main/index.html"
-                    class="btn-icon"
-                    aria-label="QR Code Challenge"
-                  >
-                    <ion-icon
-                      name="arrow-forward-sharp"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-                <div class="card-content">
-                  <span class="chip label-md">Web Design</span>
-                  <h3 class="title-md">QR Code Component</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, odio. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Consequatur, odio.
-                  </p>
-                  <a
-                    href="https://github.com/marykasp/frontend-challenges/tree/main/projects/qr-code-component-main"
-                    class="btn btn-secondary"
-                    target="_blank"
-                    >View Code</a
-                  >
-                </div>
+                  <ion-icon
+                    name="arrow-forward-sharp"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
               </div>
-            </li>
-            <li>
-              <div class="project-card grid-flow">
-                <div
-                  class="card-banner img-block"
-                  style="--width: 800; --height: 540"
+              <div class="card-content">
+                <div class="chip-box">
+                  <span class="chip label-md" data-chip="css">CSS</span>
+                  <span class="chip label-md" data-chip="html">HTML</span>
+                </div>
+                <h3 class="title-md">QR Code Component</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, odio. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Consequatur, odio.
+                </p>
+                <a
+                  href="https://github.com/marykasp/frontend-challenges/tree/main/projects/qr-code-component-main"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >View Code</a
                 >
-                  <img
-                    src="./assets/images/project-2.png"
-                    alt="project-2"
-                    width="800"
-                    height="540"
-                  />
-                  <a
-                    href="./projects/order-summary-component-main/index.html"
-                    class="btn-icon"
-                    aria-label="QR Code Challenge"
-                  >
-                    <ion-icon
-                      name="arrow-forward-sharp"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-                <div class="card-content">
-                  <span class="chip label-md">Web Design</span>
-                  <h3 class="title-md">Order Summary Card</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, odio. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Consequatur, odio.
-                  </p>
-                  <a href="#" class="btn btn-secondary">View Code</a>
-                </div>
               </div>
-            </li>
-            <li>
-              <div class="project-card grid-flow">
-                <div
-                  class="card-banner img-block"
-                  style="--width: 800; --height: 540"
+            </div>
+            <div class="project-card grid-flow">
+              <div
+                class="card-banner img-block"
+                style="--width: 800; --height: 540"
+              >
+                <img
+                  src="./assets/images/project-2.png"
+                  alt="project-2"
+                  width="800"
+                  height="540"
+                />
+                <a
+                  href="./projects/order-summary-component-main/index.html"
+                  class="btn-icon"
+                  aria-label="QR Code Challenge"
                 >
-                  <img
-                    src="./assets/images/project-3.png"
-                    alt="project-1"
-                    width="800"
-                    height="540"
-                  />
-                  <a
-                    href="./projects/single-price-grid-component-master/index.html"
-                    class="btn-icon"
-                    aria-label="Single Place Grid Challenge"
-                  >
-                    <ion-icon
-                      name="arrow-forward-sharp"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-                <div class="card-content">
-                  <span class="chip label-md">Web Design</span>
-                  <h3 class="title-md">Single Place Grid</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, odio. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Consequatur, odio.
-                  </p>
-                  <a href="#" class="btn btn-secondary">View Code</a>
-                </div>
+                  <ion-icon
+                    name="arrow-forward-sharp"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
               </div>
-            </li>
-            <li>
-              <div class="project-card grid-flow">
-                <div
-                  class="card-banner img-block"
-                  style="--width: 800; --height: 540"
+              <div class="card-content">
+                <div class="chip-box">
+                  <span class="chip label-md" data-chip="css">CSS</span>
+                  <span class="chip label-md" data-chip="html">HTML</span>
+                </div>
+
+                <h3 class="title-md">Order Summary Card</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, odio. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Consequatur, odio.
+                </p>
+                <a href="#" class="btn btn-secondary">View Code</a>
+              </div>
+            </div>
+            <div class="project-card grid-flow">
+              <div
+                class="card-banner img-block"
+                style="--width: 800; --height: 540"
+              >
+                <img
+                  src="./assets/images/project-3.png"
+                  alt="project-1"
+                  width="800"
+                  height="540"
+                />
+                <a
+                  href="./projects/single-price-grid-component-master/index.html"
+                  class="btn-icon"
+                  aria-label="Single Place Grid Challenge"
                 >
-                  <img
-                    src="./assets/images/project-4.png"
-                    alt="project-1"
-                    width="800"
-                    height="540"
-                  />
-                  <a
-                    href="./projects/results-summary-component-main/index.html"
-                    class="btn-icon"
-                    aria-label="QR Code Challenge"
-                  >
-                    <ion-icon
-                      name="arrow-forward-sharp"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-                <div class="card-content">
-                  <span class="chip label-md">Web Design</span>
-                  <h3 class="title-md">Results Summary Component</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, odio. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Consequatur, odio.
-                  </p>
-                  <a href="#" class="btn btn-secondary">View Code</a>
-                </div>
+                  <ion-icon
+                    name="arrow-forward-sharp"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
               </div>
-            </li>
-          </ul>
+              <div class="card-content">
+                <div class="chip-box">
+                  <span class="chip label-md" data-chip="css">CSS</span>
+                  <span class="chip label-md" data-chip="html">HTML</span>
+                </div>
+                <h3 class="title-md">Single Place Grid</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, odio. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Consequatur, odio.
+                </p>
+                <a href="#" class="btn btn-secondary">View Code</a>
+              </div>
+            </div>
+            <div class="project-card grid-flow">
+              <div
+                class="card-banner img-block"
+                style="--width: 800; --height: 540"
+              >
+                <img
+                  src="./assets/images/project-4.png"
+                  alt="project-1"
+                  width="800"
+                  height="540"
+                />
+                <a
+                  href="./projects/results-summary-component-main/index.html"
+                  class="btn-icon"
+                  aria-label="QR Code Challenge"
+                >
+                  <ion-icon
+                    name="arrow-forward-sharp"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <div class="chip-box">
+                  <span class="chip label-md" data-chip="css">CSS</span>
+                  <span class="chip label-md" data-chip="html">HTML</span>
+                </div>
+                <h3 class="title-md">Results Summary Component</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, odio. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Consequatur, odio.
+                </p>
+                <a href="#" class="btn btn-secondary">View Code</a>
+              </div>
+            </div>
+          </div>
         </section>
       </article>
     </main>
