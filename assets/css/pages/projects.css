@@ -190,6 +190,10 @@ article {
   --item-color: var(--maximum-yellow-red_a40);
 }
 
+.chip[data-chip="js"] {
+  --item-color: var(--olive-green_a30);
+}
+
 .project-card .card-text {
   margin-block: 10px 25px;
 }
