@@ -28,29 +28,47 @@
         </p>
       </div>
       <form data-form>
-        <label class="radio-button">
-          <input type="radio" value="1" name="rating" class="sr-only" />
-          <span>1</span>
-        </label>
-        <label class="radio-button">
-          <input type="radio" value="2" name="rating" class="sr-only" />
-          <span>2</span>
-        </label>
-        <label class="radio-button">
-          <input type="radio" value="3" name="rating" class="sr-only" />
-          <span>3</span>
-        </label>
-        <label class="radio-button">
-          <input type="radio" value="4" name="rating" class="sr-only" />
-          <span>4</span>
-        </label>
-        <label class="radio-button">
-          <input type="radio" value="5" name="rating" class="sr-only" />
-          <span>5</span>
-        </label>
+        <div class="rating-group flex-group">
+          <label class="radio-button">
+            <input type="radio" value="1" name="rating" class="sr-only" />
+            <span class="control">1 <span class="sr-only">star</span></span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" value="2" name="rating" class="sr-only" />
+            <span class="control">2 <span class="sr-only">star</span></span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" value="3" name="rating" class="sr-only" />
+            <span class="control">3 <span class="sr-only">star</span></span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" value="4" name="rating" class="sr-only" />
+            <span class="control">4 <span class="sr-only">star</span></span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" value="5" name="rating" class="sr-only" />
+            <span class="control">5 <span class="sr-only">star</span></span>
+          </label>
+        </div>
 
         <button type="submit">Submit</button>
       </form>
+    </div>
+
+    <!-- result section -->
+    <div class="results" data-results>
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt=""
+        width="162"
+        height="108"
+      />
+      <p class="rating-result">You selected {{result}} out of 5</p>
+      <h1 class="text-center">Thank you!</h1>
+      <p class="text-center">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch.
+      </p>
     </div>
 
     <!-- <div class="attribution">

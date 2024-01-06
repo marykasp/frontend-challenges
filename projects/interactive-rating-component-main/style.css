@@ -43,6 +43,7 @@ body {
   background-color: var(--clr-dark-blue);
   font-family: "Overpass", sans-serif;
   min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
 img {
@@ -55,11 +56,12 @@ button {
   font: inherit;
 }
 
-.container {
+.container,
+.results {
   max-width: 420px;
   background: var(--clr-gradient);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 figure {
@@ -92,9 +94,59 @@ p {
   margin-block-end: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /**************************************/
 /* FORM */
 /**************************************/
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 1.5rem 2rem;
+}
+
+.radio-button .control {
+  --size: 3.1875rem;
+  display: block;
+  background-color: var(--clr-blue);
+  color: var(--clr-gray);
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  text-align: center;
+  line-height: var(--size);
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+
+.radio-button:hover .control,
+.radio-button input:focus + .control {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+}
+
+/* target adjacent element */
+.radio-button input:checked + .control {
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+}
 
 button {
   outline: none;
@@ -107,7 +159,6 @@ button {
   border: unset;
   padding: 0.9rem 1rem;
   border-radius: 2.8rem;
-  margin-top: 2rem;
   cursor: pointer;
   transition: background-color 0.15s linear, color 0.15s linear;
 }
@@ -116,4 +167,31 @@ button:is(:hover, :focus-visible) {
   background-color: var(--clr-white);
   color: var(--clr-orange);
   outline: none;
+}
+
+/**************************************/
+/* RESULTS */
+/**************************************/
+.results img {
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.rating-result {
+  background-color: var(--clr-blue);
+  color: var(--clr-orange);
+  border-radius: 30px;
+  padding: 0.2rem 0.5rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
