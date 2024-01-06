@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --clr-primary: hsl(185, 75%, 39%);
+  --clr-dark-blue: hsl(229, 23%, 23%);
+  --clr-gray-blue: hsl(227, 10%, 46%);
+
+  /* neutral color */
+  --clr-white: #ffff;
+  --clr-gray: hsl(0, 0%, 59%);
+
+  --font-family-default: "Kumbh Sans", sans-serif;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: var(--font-family-default);
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 500px;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+}
+
+.image-block {
+  position: relative;
+}
+
+.image-block img:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.author-image {
+  width: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem;
+  border: 5px solid var(--clr-white);
+}
+
+.author-info {
+  text-align: center;
+  margin-top: 3rem;
+  padding-block: 1.5rem;
+  line-height: 0.9;
+}
+
+.author-info h2 {
+  color: var(--clr-dark-blue);
+  font-size: 1.2rem;
+}
+
+.author-info span {
+  font-weight: 400;
+  color: var(--clr-gray-blue);
+}
+
+.author-info .author-location {
+  color: var(--clr-gray-blue);
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-list {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+}
+
+.social-list li {
+  text-align: center;
+}
+
+.social-list li p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.social-list li span {
+  font-weight: 400;
+  font-size: 0.65rem;
+  letter-spacing: 0.15rem;
+  margin-top: 0.2rem;
+  display: inline-block;
+  color: var(--clr-gray);
+}
+
+.bg-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -1;
+}
+
+@media (max-width: 375px) {
+  .bg-top {
+    height: 375px;
+    width: 375px;
+    left: -40%;
+  }
+
+  .bg-bottom {
+    height: 375px;
+    width: 375px;
+    right: -40%;
+  }
+}
