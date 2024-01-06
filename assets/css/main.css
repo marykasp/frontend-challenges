@@ -7,7 +7,7 @@
 \*-----------------------------------*/
 .hero {
   position: relative;
-  padding-block-start: calc(var(--section-padding) + 60px);
+  padding-block-start: calc(var(--section-padding) + 110px);
   text-align: center;
   overflow: hidden;
 }

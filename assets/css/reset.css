@@ -182,7 +182,7 @@ body.loaded {
   left: 0;
   height: 100vh;
   width: 100vw;
-  transition: opacity 2s, visibility 2s;
+  transition: opacity 1.75s, visibility 1.75s;
 }
 
 .loader-hidden {
