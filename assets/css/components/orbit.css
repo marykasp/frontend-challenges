@@ -1,0 +1,115 @@
+:root {
+  --green: hsl(123, 47%, 74%);
+  --blue: hsl(210, 47%, 74%);
+  --orange: hsl(34, 93%, 77%);
+  --purple: hsl(231, 44%, 76%);
+  --yellow: hsl(54, 76%, 79%);
+  --brown: hsl(20, 41%, 69%);
+  --red: hsl(0, 59%, 76%);
+  --pink: hsl(295, 42%, 72%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.orbit {
+  --size: 30rem;
+  --speed: 12s;
+  width: var(--size);
+  margin-inline: auto;
+}
+
+.orbit li img {
+  width: 40px;
+  height: 40px;
+}
+
+.center-image {
+  width: var(--size);
+  position: relative;
+  z-index: 10;
+}
+
+.center-image img {
+  position: absolute;
+  transition: opacity 500ms;
+}
+
+.orbit ul {
+  --icon-bg: var(--green);
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  list-style: none;
+  transform-origin: center;
+}
+
+.orbit li {
+  --icon-bg: pink;
+
+  position: absolute;
+  width: 7rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  font-weight: 500;
+  color: var(--white-light);
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+.orbit li > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit li p {
+  opacity: 0;
+}
+
+.orbit li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+}
+
+.orbit li > div {
+  background-color: var(--icon-bg);
+}
+
+.orbit li:nth-child(1) {
+  transform: translate(15rem, 0rem);
+}
+
+.orbit li:nth-child(2) {
+  transform: translate(10rem, 10rem);
+}
+
+.orbit li:nth-child(3) {
+  transform: translate(0, 15rem);
+}
+
+.orbit li:nth-child(4) {
+  transform: translate(-10rem, 10rem);
+}
+
+.orbit li:nth-child(5) {
+  transform: translate(-15rem, 0rem);
+}
+
+.orbit li:nth-child(6) {
+  transform: translate(-10rem, -10rem);
+}
+
+.orbit li:nth-child(7) {
+  transform: translate(0rem, -15rem);
+}
+
+.orbit li:nth-child(8) {
+  transform: translate(10rem, -10rem);
+}

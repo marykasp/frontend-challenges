@@ -1,11 +1,10 @@
 @import url("./components/btn.css");
 @import url("./components/card.css");
-/* @import url("./components/slider.css"); */
+@import url("./components/orbit.css");
 
 /*-----------------------------------*\
   #HERO SECTION
 \*-----------------------------------*/
-
 .hero {
   position: relative;
   padding-block-start: calc(var(--section-padding) + 60px);
