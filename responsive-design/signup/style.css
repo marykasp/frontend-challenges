@@ -40,3 +40,52 @@ body {
   border-radius: inherit;
   background-color: #143d81;
 }
+
+.card {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: 0 20px;
+  padding: 160px 30px 30px;
+  border-radius: 1.25em;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  background: #216ce7;
+  top: -880px;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  translate: -50% 0;
+}
+
+.card .logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 64px;
+  width: 64px;
+  top: 30px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.card .logo i {
+  font-size: 50px;
+  color: #216ce7;
+  font-weight: 500;
+}
+
+.card > h2 {
+  font-size: 22px;
+}
